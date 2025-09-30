@@ -1,0 +1,19 @@
+.subject-info {
+  margin-top: 1rem;
+  background-color: #0d82a3;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.subject-info.fade-in {
+  opacity: 1;
+  max-height: 200px;
+}
+
+.hidden {
+  display: none;
+}

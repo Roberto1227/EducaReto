@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Materias | EduVerso</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/log.png" type="image/x-icon" />
+
+  <!-- Librerías -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/materias.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="navL">
+        <img src="img/log.png" alt="favicon" class="navL-img" />
+        EduVerso
+      </a>
+
+      <div class="navM" id="nav-menu">
+        <ul class="navList">
+          <li class="navItem">
+            <a href="index.html" class="navLink active-link">Inicio</a>
+          </li>
+          <li class="navItem">
+            <a href="login.html" class="navLink">Registro</a>
+          </li>
+        </ul>
+        <div class="navclose" id="nav-close">
+          <i class="bx bx-x"></i>
+        </div>
+      </div>
+
+      <div class="navToggle" id="nav-toggle">
+        <i class="bx bx-grid-alt"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Intro -->
+  <section class="section container grid" style="grid-template-columns: 1fr 1fr; align-items: center;">
+    <div>
+      <h1 class="sectiontitle">Explora las Materias</h1>
+      <p>Descubre los juegos educativos que transforman el aprendizaje en aventuras. Cada materia ofrece desafíos, recompensas y conocimientos únicos para que los niños aprendan jugando.</p>
+    </div>
+    <div>
+      <img src="img/log.png" alt="EduVerso Logo" style="width: 250px; display: block; margin: auto;" />
+    </div>
+  </section>
+
+  <!-- Materias -->
+  <section class="section subjects" id="subjects">
+    <h2 class="sectiontitle">Nuestras Materias</h2>
+    <div class="subjectscontainer container grid" style="grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+      
+      <!-- Matemáticas -->
+      <div class="subjectscontent">
+        <img src="img/modulo1.png" alt="Matemáticas" class="subjectsimg" />
+        <h3 class="subjectstitle">Matemáticas</h3>
+        <span class="subjectssubtitle">Lógica y números</span>
+        <div style="margin-top: 1rem;">
+          <button class="button subjectsbutton">Jugar</button>
+          <button class="button subjectsbutton info-toggle">Saber Más</button>
+        </div>
+        <div class="subject-info hidden">
+          <p>Aprenderás operaciones básicas, lógica matemática y resolución de problemas a través de juegos como rompecabezas, laberintos numéricos y desafíos de cálculo.</p>
+        </div>
+      </div>
+
+      <!-- Ciencias -->
+      <div class="subjectscontent">
+        <img src="img/modulo2.png" alt="Ciencias" class="subjectsimg" />
+        <h3 class="subjectstitle">Ciencias</h3>
+        <span class="subjectssubtitle">Explora el mundo</span>
+        <div style="margin-top: 1rem;">
+          <button class="button subjectsbutton">Jugar</button>
+          <button class="button subjectsbutton info-toggle">Saber Más</button>
+        </div>
+        <div class="subject-info hidden">
+          <p>Explora el cuerpo humano, el sistema solar y experimentos virtuales que despiertan la curiosidad científica en cada niño.</p>
+        </div>
+      </div>
+
+      <!-- Gramática -->
+      <div class="subjectscontent">
+        <img src="img/modulo3.png" alt="Gramática" class="subjectsimg" />
+        <h3 class="subjectstitle">Gramática</h3>
+        <span class="subjectssubtitle">Lengua y escritura</span>
+        <div style="margin-top: 1rem;">
+          <button class="button subjectsbutton">Jugar</button>
+          <button class="button subjectsbutton info-toggle">Saber Más</button>
+        </div>
+        <div class="subject-info hidden">
+          <p>Construye oraciones, juega con sinónimos y mejora tu escritura con actividades que refuerzan la comprensión lectora y la expresión escrita.</p>
+        </div>
+      </div>
+
+      <!-- Inglés -->
+      <div class="subjectscontent">
+        <img src="img/modulo4.png" alt="Inglés" class="subjectsimg" />
+        <h3 class="subjectstitle">Inglés</h3>
+        <span class="subjectssubtitle">Conoce otra lengua</span>
+        <div style="margin-top: 1rem;">
+          <button class="button subjectsbutton">Jugar</button>
+          <button class="button subjectsbutton info-toggle">Saber Más</button>
+        </div>
+        <div class="subject-info hidden">
+          <p>Aprende vocabulario, frases útiles y pronunciación con juegos interactivos que te sumergen en el idioma de forma divertida.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer section">
+    <div class="footercontainer container grid">
+      <div>
+        <a href="#" class="footerL">
+          <img src="img/log.png" alt="logo" class="footerL-img" />
+          EduVerso
+        </a>
+        <p class="footerdescription">Aprende jugando, descubre tu mundo.</p>
+        <div class="footersocial">
+          <a href="#" class="footersocial-link"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="footersocial-link"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="footersocial-link"><i class="bx bxl-twitter"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footertitle">Materias</h3>
+        <ul class="footerlinks">
+          <li><a href="#" class="footerlink">Matemáticas</a></li>
+          <li><a href="#" class="footerlink">Ciencias</a></li>
+          <li><a href="#" class="footerlink">Gramática</a></li>
+          <li><a href="#" class="footerlink">Inglés</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footertitle">Nosotros</h3>
+        <ul class="footerlinks">
+          <li><a href="#" class="footerlink">Equipo</a></li>
+          <li><a href="#" class="footerlink">Misión</a></li>
+          <li><a href="#" class="footerlink">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footertitle">Legal</h3>
+        <ul class="footerlinks">
+          <li><a href="#" class="footerlink">Privacidad</a></li>
+          <li><a href="#" class="footerlink">Términos</a></li>
+        </ul>
+      </div>
+    </div>
+    <span class="footercopy">&#169; EduVerso 2025. Todos los derechos reservados.</span>
+  </footer>
+
+  <!-- Scroll Up -->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="bx bx-up-arrow-alt scrollupicon"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/scrollreveal.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/materias.js"></script>
+</body>
+</html>
