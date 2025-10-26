@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Escritura - EducaReto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Juego de Escritura</h1>
+            <p>Construye oraciones, juega con sinónimos y mejora tu escritura</p>
+            <div class="audio-controls">
+                <button id="audio-toggle" class="btn-audio" onclick="toggleAudio()">
+                    <span id="audio-icon">🔊</span>
+                    <span id="audio-text">Audio: ON</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="game-selector">
+            <h2>Selecciona una actividad:</h2>
+            <div class="game-buttons">
+                <button class="game-btn" data-game="sentences">
+                    <span class="icon">📝</span>
+                    <span class="title">Construir Oraciones</span>
+                    <span class="description">Ordena las palabras para formar oraciones correctas</span>
+                </button>
+                <button class="game-btn" data-game="synonyms">
+                    <span class="icon">🔄</span>
+                    <span class="title">Sinónimos</span>
+                    <span class="description">Encuentra palabras con significado similar</span>
+                </button>
+                <button class="game-btn" data-game="writing">
+                    <span class="icon">✍️</span>
+                    <span class="title">Mejorar Escritura</span>
+                    <span class="description">Completa y mejora textos</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Juego de Construir Oraciones -->
+        <div id="sentences-game" class="game-section hidden">
+            <div class="game-header">
+                <h3>📝 Construir Oraciones</h3>
+                <div class="score">
+                    <span>Puntuación: <span id="sentences-score">0</span></span>
+                    <span>Nivel: <span id="sentences-level">1</span> de <span id="sentences-total">20</span></span>
+                </div>
+            </div>
+            <div class="game-content">
+                <div class="instruction">
+                    <p>Ordena las palabras para formar una oración correcta:</p>
+                </div>
+                <div class="sentence-display">
+                    <div id="sentence-words" class="word-container"></div>
+                </div>
+                <div class="answer-area">
+                    <div id="answer-words" class="word-container"></div>
+                </div>
+                <div class="controls">
+                    <button id="check-sentence" class="btn-primary">Verificar</button>
+                    <button id="hint-sentence" class="btn-secondary">Pista</button>
+                    <button id="reset-sentence" class="btn-secondary">Reiniciar</button>
+                    <button id="next-sentence" class="btn-primary hidden">Siguiente</button>
+                </div>
+                <div id="sentence-feedback" class="feedback"></div>
+            </div>
+        </div>
+
+        <!-- Juego de Sinónimos -->
+        <div id="synonyms-game" class="game-section hidden">
+            <div class="game-header">
+                <h3>🔄 Sinónimos</h3>
+                <div class="score">
+                    <span>Puntuación: <span id="synonyms-score">0</span></span>
+                    <span>Nivel: <span id="synonyms-level">1</span> de <span id="synonyms-total">20</span></span>
+                </div>
+            </div>
+            <div class="game-content">
+                <div class="instruction">
+                    <p>Encuentra el sinónimo de la palabra:</p>
+                </div>
+                <div class="word-display">
+                    <div id="target-word" class="target-word"></div>
+                </div>
+                <div class="options-container">
+                    <div id="synonym-options" class="options-grid"></div>
+                </div>
+                <div class="controls">
+                    <button id="reset-synonym" class="btn-secondary">Reiniciar</button>
+                    <button id="next-synonym" class="btn-primary hidden">Siguiente</button>
+                </div>
+                <div id="synonym-feedback" class="feedback"></div>
+            </div>
+        </div>
+
+        <!-- Juego de Mejorar Escritura -->
+        <div id="writing-game" class="game-section hidden">
+            <div class="game-header">
+                <h3>✍️ Mejorar Escritura</h3>
+                <div class="score">
+                    <span>Puntuación: <span id="writing-score">0</span></span>
+                    <span>Nivel: <span id="writing-level">1</span> de <span id="writing-total">20</span></span>
+                </div>
+            </div>
+            <div class="game-content">
+                <div class="instruction">
+                    <p>Completa el texto con las palabras correctas:</p>
+                </div>
+                <div class="text-display">
+                    <div id="writing-text" class="text-content"></div>
+                </div>
+                <div class="options-container">
+                    <div id="writing-options" class="options-grid"></div>
+                </div>
+                <div class="controls">
+                    <button id="check-writing" class="btn-primary">Verificar</button>
+                    <button id="reset-writing" class="btn-secondary">Reiniciar</button>
+                    <button id="next-writing" class="btn-primary hidden">Siguiente</button>
+                </div>
+                <div id="writing-feedback" class="feedback"></div>
+            </div>
+        </div>
+
+        <div class="back-button">
+            <button id="back-to-menu" class="btn-secondary hidden">← Volver al Menú</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
